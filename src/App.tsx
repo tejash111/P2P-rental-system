@@ -12,12 +12,8 @@ const sampleItems: Item[] = [
     category: 'Electronics',
     price: 1000,
     dailyRate: 25,
-    image: 'https://images.unsplash.com/photo-1574607383476-f517f260d30b?auto=format&fit=crop&q=80&w=2000',
-    owner: {
-      id: '1',
-      name: 'Rahul Kumar',
-      rating: 4.8
-    },
+    image: 'https://images.unsplash.com/photo-1728225956964-d728341aadb9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNjaW50aWZpYyUyMGNhbGN1bGF0b3J8ZW58MHx8MHx8fDA%3D',
+    owner: { id: '1', name: 'Rahul Kumar', rating: 4.8 },
     available: true,
     aiRecommendation: {
       suggestedPrice: 30,
@@ -32,12 +28,8 @@ const sampleItems: Item[] = [
     category: 'Tools',
     price: 3000,
     dailyRate: 75,
-    image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=2000',
-    owner: {
-      id: '2',
-      name: 'Priya Singh',
-      rating: 4.5
-    },
+    image: 'https://images.unsplash.com/photo-1646172794471-e1d3ba18339f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHB3ZXJlJTIwZHJpbGx8ZW58MHx8MHx8fDA%3D',
+    owner: { id: '2', name: 'Priya Singh', rating: 4.5 },
     available: true,
     aiRecommendation: {
       suggestedPrice: 70,
@@ -52,20 +44,134 @@ const sampleItems: Item[] = [
     category: 'Electronics',
     price: 50000,
     dailyRate: 1250,
-    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=2000',
-    owner: {
-      id: '3',
-      name: 'Amit Patel',
-      rating: 4.9
-    },
+    image: 'https://images.unsplash.com/photo-1625545013865-80da35181abf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZHNscnxlbnwwfHwwfHx8MA%3D%3D',
+    owner: { id: '3', name: 'Amit Patel', rating: 4.9 },
     available: false,
     aiRecommendation: {
       suggestedPrice: 1500,
       confidence: 0.88,
       reasoning: "Premium pricing justified by high demand in wedding season"
     }
+  },
+  {
+    id: '4',
+    name: 'Camping Tent',
+    description: 'Spacious 4-person camping tent with waterproof cover',
+    category: 'Outdoor',
+    price: 7000,
+    dailyRate: 200,
+    image: 'https://images.unsplash.com/photo-1633805159007-8e198bbcc931?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhbXBpbmclMjB0ZW50fGVufDB8fDB8fHww',
+    owner: { id: '4', name: 'Neha Verma', rating: 4.6 },
+    available: true,
+    aiRecommendation: {
+      suggestedPrice: 220,
+      confidence: 0.9,
+      reasoning: "Seasonal camping trend suggests room for a slight price increase"
+    }
+  },
+  {
+    id: '5',
+    name: 'Electric Guitar',
+    description: 'Classic electric guitar with amp, perfect for gigs and practice',
+    category: 'Musical Instruments',
+    price: 15000,
+    dailyRate: 400,
+    image: 'https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWxlY3RyaWMlMjBndWl0YXJ8ZW58MHx8MHx8fDA%3D',
+    owner: { id: '5', name: 'Rohit Das', rating: 4.7 },
+    available: true,
+    aiRecommendation: {
+      suggestedPrice: 450,
+      confidence: 0.87,
+      reasoning: "Music festivals and events drive demand for instruments"
+    }
+  },
+  {
+    id: '6',
+    name: 'Projector',
+    description: 'Full HD portable projector with HDMI and wireless support',
+    category: 'Electronics',
+    price: 12000,
+    dailyRate: 300,
+    image: 'https://images.unsplash.com/photo-1528395874238-34ebe249b3f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvamVjdG9yfGVufDB8fDB8fHww',
+    owner: { id: '6', name: 'Anjali Rao', rating: 4.9 },
+    available: true,
+    aiRecommendation: {
+      suggestedPrice: 350,
+      confidence: 0.91,
+      reasoning: "High demand for movie nights and office presentations"
+    }
+  },
+  {
+    id: '7',
+    name: 'GoPro Hero 10',
+    description: 'Waterproof action camera with 5.3K video and stabilization',
+    category: 'Electronics',
+    price: 38000,
+    dailyRate: 900,
+    image: 'https://images.unsplash.com/photo-1690099613427-1a3412175445?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdvcHJvJTIwaGVybyUyMDEwfGVufDB8fDB8fHww',
+    owner: { id: '7', name: 'Kabir Shah', rating: 4.8 },
+    available: false,
+    aiRecommendation: {
+      suggestedPrice: 1000,
+      confidence: 0.89,
+      reasoning: "Adventure tourism season increases rental demand"
+    }
+  },
+  {
+    id: '8',
+    name: 'DJ Controller',
+    description: 'Professional DJ controller with performance pads and jog wheels',
+    category: 'Musical Instruments',
+    price: 25000,
+    dailyRate: 750,
+    image: 'https://images.unsplash.com/photo-1571266028243-d220c6a7edbf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGolMjBjb250cm9sbGVyfGVufDB8fDB8fHww',
+    owner: { id: '8', name: 'Simran Kaur', rating: 4.7 },
+    available: true,
+    aiRecommendation: {
+      suggestedPrice: 800,
+      confidence: 0.86,
+      reasoning: "Increased bookings for weddings and parties"
+    }
+  },
+  {
+    id: '9',
+    name: 'Mountain Bike',
+    description: 'All-terrain mountain bike with 21-speed gear and disc brakes',
+    category: 'Outdoor',
+    price: 20000,
+    dailyRate: 500,
+    image: 'https://images.unsplash.com/photo-1534150034764-046bf225d3fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vdW50YWluJTIwYmlrZXxlbnwwfHwwfHx8MA%3D%3D',
+    owner: { id: '9', name: 'Arjun Mehra', rating: 4.6 },
+    available: true,
+    aiRecommendation: {
+      suggestedPrice: 550,
+      confidence: 0.84,
+      reasoning: "Weekend adventure bookings increase during holidays"
+    }
+  },
+  {
+    id: '10',
+    name: 'VR Headset',
+    description: 'Next-gen VR headset with immersive 3D experience',
+    category: 'Electronics',
+    price: 25000,
+    dailyRate: 700,
+    image: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dnIlMjBoZWFkc2V0fGVufDB8fDB8fHww',
+    owner: { id: '10', name: 'Sanya Kapoor', rating: 4.8 },
+    available: false,
+    aiRecommendation: {
+      suggestedPrice: 750,
+      confidence: 0.88,
+      reasoning: "Growing gaming and VR event demand"
+    }
   }
 ];
+
+
+
+
+  
+  
 
 const categories = ['All', 'Electronics', 'Tools', 'Sports', 'Books', 'Music'];
 
@@ -117,7 +223,7 @@ function App() {
                 onClick={() => setShowProducts(false)} // Navigates to the home page
                 className="text-2xl font-bold text-gray-900 cursor-pointer hover:text-blue-600 transition-colors"
               >
-                P2P Rental System
+                DERES
               </h1>
               <button
                 onClick={() => setShowProducts(true)}
@@ -134,6 +240,10 @@ function App() {
           <div className="relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
               <div className="text-center">
+                {/* Added new heading */}
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+                  <span className=''>P2P</span> <span className='text-blue-600'>De</span>centralised <span className='text-blue-600'>Re</span>ntal <span className='text-blue-600'>S</span>ystem
+                </h1>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                   Rent Anything, <span className="text-blue-600">Anytime</span>
                 </h1>
@@ -305,7 +415,7 @@ function App() {
               onClick={() => setShowProducts(false)} // Navigates to the home page
               className="text-2xl font-bold text-gray-900 cursor-pointer hover:text-blue-600 transition-colors"
             >
-              P2P Rental System
+              DERES
             </h1>
             <div className="flex items-center gap-4">
               <button
